@@ -2,7 +2,7 @@
 	*
 	* 정수 배열이 주어지면 이어지는 원소들의 합 중 가장 큰 합을 구하시오. 단, 시간복잡도는 O(n).
 	*
-	* Example:
+	* [Example]
 	* Input: [-1, 3, -1, 5]
 	* Output: 7 // 3 + (-1) + 5
 	*
@@ -14,7 +14,8 @@
 	*
 */
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 #define MAX(a,b) (a>=b)?a:b
 
@@ -34,7 +35,9 @@ int main(void){
     int b[] = {-5,-3,-1};
     int c[] = {2,4,-2,-3,8};
     
-    printf("%d\n", solve(a));
+    cout << solve(a) << endl;
+    cout << solve(b) << endl;
+    cout << solve(c) << endl;
     
     return 0;
 }
