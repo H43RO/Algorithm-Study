@@ -1,8 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int main(void){
+int main(){
     int n;
-    cin >> n;
-    return 0;
+    scanf("%d", &n);
+
+    int ans = -1;
+    for (int i = 0; i * 5 <= n; i++){
+        if ((n - i * 5) % 3 == 0){
+            ans = i + ((n - i * 5) / 3);
+        }
+    }
+
+    printf("%d", ans);
 }
